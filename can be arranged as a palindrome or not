@@ -1,0 +1,25 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+ string s;
+ cin>>s;
+ int i;
+ unordered_map<char,int>mp;
+ for(i=0;i<s.length();i++){
+     mp[s[i]]++;
+ }
+ int c=0;
+ for(auto it:mp){
+     if(it.second%2==1)
+     c++;
+ }
+ if(c>1)
+ cout<<"No palindrome";
+ else
+ cout<<"yes palindrome";
+return 0;
+}
+output
+atta
+yes palindrome
