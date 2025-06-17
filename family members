@@ -1,0 +1,27 @@
+count of the given character
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+   string s;
+   cin>>s;
+   unordered_map<char,int>mp;
+   int i;
+   for(i=0;i<s.length();i++){
+       mp[s[i]]++;
+   }
+   int t;
+   cin>>t;
+   while(t--){
+       char ch;
+       cin>>ch;
+       cout<<mp[ch]<<"\n";
+   }
+
+    return 0;
+}
+output
+stars
+1
+s
+2
