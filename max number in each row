@@ -1,0 +1,28 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+   int n,m,i,j;
+   cin>>n>>m;
+   vector<int>v;
+   int maxi;
+   int a[n][m];
+   for(i=0;i<n;i++){
+       maxi=INT_MIN;
+       for(j=0;j<m;j++){
+           cin>>a[i][j];
+           maxi=max(maxi,a[i][j]);
+       }
+       v.push_back(maxi);
+   }
+   for(auto it:v){
+       cout<<it<<" ";
+   }
+    return 0;
+}
+output
+2 3
+3 7 1
+9 0 7
+7 9 
