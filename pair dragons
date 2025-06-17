@@ -1,0 +1,22 @@
+head dragon wants to pair with the other dragon whose product of powers is the most
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+   int n;
+   cin>>n;
+  int a[n],i;
+  for(i=0;i<n;i++){
+      cin>>a[i];
+  }
+  sort(a,a+n);
+if(a[0]*a[1]<a[n-1]*a[n-2])
+cout<<a[n-2]<<" "<<a[n-1]<<"\n";
+else
+cout<<a[0]<<" "<<a[1]<<"\n";
+    return 0;
+}
+output
+4
+-8 -4 1 2
+-8 -4
