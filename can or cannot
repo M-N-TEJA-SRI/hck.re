@@ -1,0 +1,21 @@
+you have to change only one character and change all to 0's or 1's is it possible?
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+ string s;
+ cin>>s;
+ int i;
+ unordered_map<char,int>mp;
+ for(i=0;i<s.length();i++){
+     mp[s[i]]++;
+ }
+ if(mp['1']>1)
+ cout<<"cannot";
+ else
+ cout<<"can";
+return 0;
+}
+output
+1001
+cannot
