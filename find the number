@@ -1,0 +1,19 @@
+change a,A to 1 b,B to 2 etc
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int charnum(char n){
+    if(n>='A'&&n<='Z')
+    return n-'A'+1;
+    else
+    return n-'a'+1;
+}
+int main() {
+   char n;
+   cin>>n;
+   cout<<charnum(n);
+    return 0;
+}
+output
+h
+8
