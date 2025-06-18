@@ -1,0 +1,32 @@
+boy goes for shopping buys all chocolates with fixed prices find total bill(50marks you got)
+#include <iostream>
+using namespace std;
+int main() {
+    int n,x;
+    cin>>n;
+    string s;
+    int i,sum=0;
+    for(i=0;i<n;i++){
+        cin>>s>>x;
+        if(s=="5star")
+        sum+=x*20;
+        else if(s=="Perk")
+        sum+=x*10;
+        else if(s=="Dairymilk")
+        sum+=x*15;
+        else if(s=="chocos")
+        sum+=x*30;
+        else if(s=="Bournivillie")
+        sum+=x*145;
+        else if(s=="Kitkat")
+        sum+=x*60;
+        
+    }
+    cout<<sum;
+
+    return 0;
+}
+output
+    1
+    5star 20
+    400     
