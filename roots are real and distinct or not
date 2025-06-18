@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+   int a,b,c,x;
+   cin>>a>>b>>c;
+   x=(b*b)-(4*a*c);
+   if(x>0)
+   cout<<"real and distinct";
+   else
+   cout<<"not real and distinct";
+    return 0;
+}
+output
+10 7 12
+not real and distinct
