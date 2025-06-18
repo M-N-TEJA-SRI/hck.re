@@ -1,0 +1,9 @@
+find the year greater than given such that all digits in it distinct
+n=int(input())
+n+=1
+while(len(set(str(n)))!=4):
+    n+=1
+print(n)    
+output
+1987
+2013
