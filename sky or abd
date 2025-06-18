@@ -1,0 +1,16 @@
+a,c are number of 4's of sky and abd.b,d are number of 6's of sky and abd.
+#include <iostream>
+using namespace std;
+int main() {
+   int a,b,c,d;
+   cin>>a>>b>>c>>d;
+   int sky=(4*a)+(6*b),abd=(4*c)+(6*d);
+   if(sky>abd)
+   cout<<"sky";
+   else
+   cout<<"abd";
+    return 0;
+}
+output
+8468 6335 6501 9170
+abd
