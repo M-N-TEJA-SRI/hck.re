@@ -1,0 +1,8 @@
+print the elements that are not the multiples of 5 here size of list is not given
+li=list(map(int,input().split()))
+for i in li:
+    if(i%5!=0):
+        print(i,end=' ')
+output
+1 2 3 4 5 6 5
+1 2 3 4 6 
