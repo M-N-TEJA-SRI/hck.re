@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int n,m,i,j,sum,maxi=0,row=-1;
+ cin>>n>>m;
+ int a[n][m];
+ for(i=0;i<n;i++){
+     sum=0;
+     for(j=0;j<m;j++){
+         cin>>a[i][j];
+         sum+=a[i][j];
+     }
+     if(sum>maxi){
+         maxi=sum;
+         row=i;
+     }
+ }
+ cout<<row<<" "<<maxi;
+    return 0;
+}
+output
+3 3
+1 2 3
+4 5 6
+7 8 9
